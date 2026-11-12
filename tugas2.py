@@ -3,14 +3,12 @@ def tampilkan_judul():
     print("STRUK PENGIRIMAN TOKO DARING")
     print("============================")
 
-
 def biaya_berat(berat):
     """Menghitung biaya berdasarkan berat paket."""
     if berat <= 2:
         return 10000
     else:
         return 10000 + (berat - 2) * 4000
-
 
 def biaya_jarak(jarak):
     """Menghitung biaya berdasarkan jarak pengiriman."""
@@ -19,14 +17,12 @@ def biaya_jarak(jarak):
     else:
         return 5000
 
-
 def diskon(ongkir, anggota):
     """Menghitung diskon untuk pelanggan anggota."""
     if anggota == "Ya":
         return ongkir * 0.1
     else:
         return 0
-
 
 def tampilkan_struk(nama, berat, jarak, anggota):
     """Menghitung dan menampilkan struk pengiriman."""
@@ -45,7 +41,6 @@ def tampilkan_struk(nama, berat, jarak, anggota):
 
     return total
 
-
 def main():
     """Menjalankan program struk pengiriman."""
     tampilkan_judul()
@@ -60,7 +55,6 @@ def main():
 
     print("\n============================")
     print("Total pendapatan: Rp", total_pendapatan)
-
 
 if __name__ == "__main__":
     main()
