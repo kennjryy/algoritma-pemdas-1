@@ -2,7 +2,6 @@ def hitung_nilai(tugas, uts, uas):
     """Menghitung nilai akhir mahasiswa."""
     return tugas * 0.3 + uts * 0.3 + uas * 0.4
 
-
 def nilai_huruf(nilai):
     """Menentukan nilai huruf mahasiswa."""
     if nilai >= 85:
@@ -16,14 +15,12 @@ def nilai_huruf(nilai):
     else:
         return "E"
 
-
 def kelulusan(huruf):
     """Menentukan status kelulusan mahasiswa."""
     if huruf == "A" or huruf == "B" or huruf == "C":
         return "LULUS"
     else:
         return "TIDAK LULUS"
-
 
 def tampilkan_nilai(nama, tugas, uts, uas):
     """Menampilkan hasil nilai mahasiswa."""
@@ -32,7 +29,6 @@ def tampilkan_nilai(nama, tugas, uts, uas):
     status = kelulusan(huruf)
 
     print(nama, nilai, huruf, status)
-
 
 def main():
     """Menjalankan program rekapitulasi nilai."""
@@ -64,7 +60,6 @@ def main():
     print("----------------------------------")
     print("Rata-rata kelas:", rata_rata)
     print("Jumlah mahasiswa lulus:", jumlah_lulus)
-
 
 if __name__ == "__main__":
     main()
